@@ -23,7 +23,7 @@ public class Game_of_life_2 {
                 {DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD, DEAD}
         };
 
-        // Displaying the grid
+        // Displaying
         System.out.println("Original Generation");
         System.out.println("..... is dead");
         System.out.println("** is live");
@@ -73,7 +73,6 @@ public class Game_of_life_2 {
                 else if ((grid[l][m] == 0) && (aliveNeighbours == 3))
                     future[l][m] = 1;
 
-                    // Remains the same
                 else
                     future[l][m] = grid[l][m];
             }
